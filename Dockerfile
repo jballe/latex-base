@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
 		locales \
 		texlive \
 		texlive-lang-european \
+		texlive-latex-extra \
 		 # required by tlmgr init-usertree
 		wget \
 		 # required by tlmgr init-usertree

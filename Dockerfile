@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
 		texlive \
 		texlive-lang-european \
 		texlive-latex-extra \
+		# textlinve-science is needed to get siunitx
+		texlive-science \
 		 # required by tlmgr init-usertree
 		wget \
 		 # required by tlmgr init-usertree

@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
 		texlive \
 		texlive-lang-european \
 		texlive-latex-extra \
+		# xetex is newer renderer assuming utf-8 and needed for jupyter
+		texline-texlive-xetex \
 		# textlinve-science is needed to get siunitx
 		texlive-science \
 		 # required by tlmgr init-usertree

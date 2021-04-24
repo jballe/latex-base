@@ -27,8 +27,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/* \
 	# Configuration
     && paperconfig -p a4 \
-	&& locale-gen en_US.UTF-8 \
-	&& locale-gen da_DK.UTF-8
+	&& echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && locale-gen \
+	&& echo "da_DK.UTF-8 UTF-8" > /etc/locale.gen && locale-gen
 
 ENV LANG=da_DK.UTF-8 \
 	LANGUAGE=da_DK:da \
